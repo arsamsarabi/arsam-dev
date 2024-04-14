@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
-import "~/styles/globals.css";
-import { Providers } from "~/components/Providers";
+import '~/styles/globals.css'
+import type { Metadata } from 'next'
+import { Providers } from '~/components/Providers'
 
 export const metadata: Metadata = {
-  title: "Arsam Sarabi",
-  description: "Software Engineer",
-};
+  title: 'Arsam Sarabi',
+  description: 'Software Engineer',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -18,5 +18,5 @@ export default function RootLayout({
         <Providers>{children}</Providers>
       </body>
     </html>
-  );
+  )
 }
