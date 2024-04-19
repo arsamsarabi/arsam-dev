@@ -8,8 +8,9 @@
     "format": "prettier '*/**/*.{js,ts,tsx}' --write",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --fix",
     "postbuild": "next-sitemap",
+    "prepare": "husky",
     "start": "next start",
-    "prepare": "husky"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.10",

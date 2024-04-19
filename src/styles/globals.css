@@ -2,32 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body {
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply text-blue-900 bg-blue-100 text-base font-body dark:text-blue-100 dark:bg-blue-900;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::selection {
+  background-color: blueviolet;
+  color: gold;
+  transition: 0.2s ease;
+}
+
+::-webkit-scrollbar-track {
+  position: absolute;
+  border: none;
+  background-color: green;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: firebrick;
+  border-radius: 2px;
 }
