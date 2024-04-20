@@ -8,7 +8,7 @@ type Props = IconProps & {
   className?: string
 }
 
-export const Icon = ({ color, name, ...rest }: Props) => {
+export const AppIcon = ({ color, name, ...rest }: Props) => {
   const isLoaded = useIsLoaded()
   const Icon = ICONS[name]
 

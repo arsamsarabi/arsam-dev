@@ -6,7 +6,7 @@ import {
   useMantineColorScheme,
 } from '@mantine/core'
 import cn from '#/styles/utility-classes.module.css'
-import { Icon } from '../icon'
+import { AppIcon } from '../app-icon'
 
 export const ColorSchemeToggle = () => {
   const { setColorScheme } = useMantineColorScheme()
@@ -23,12 +23,12 @@ export const ColorSchemeToggle = () => {
       size="xs"
       variant="subtle"
     >
-      <Icon
+      <AppIcon
         className={cn['dark-only']}
         color="var(--mantine-color-yellow-3)"
         name="sun"
       />
-      <Icon
+      <AppIcon
         className={cn['light-only']}
         color="var(--mantine-color-dark-3)"
         name="moon"
