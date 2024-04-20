@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og'
-import { cursive } from '~/styles/fonts'
+import { cursive } from '#/styles/fonts'
 
 // Route segment config
 export const runtime = 'edge'

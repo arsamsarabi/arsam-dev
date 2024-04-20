@@ -1,6 +1,6 @@
 'use client'
 
-import { useIsLoaded } from '~/hooks/use-is-loaded'
+import { useIsLoaded } from '#/hooks/use-is-loaded'
 import { ICONS, IconProps, type Icons } from './all-icons'
 
 type Props = IconProps & {

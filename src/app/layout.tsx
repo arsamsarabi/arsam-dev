@@ -1,10 +1,10 @@
 import '@mantine/core/styles.css'
-import '~/styles/globals.css'
+import '#/styles/globals.css'
 import { ColorSchemeScript } from '@mantine/core'
 import type { Metadata } from 'next'
-import { Layout } from '~/components/layout'
-import { Providers } from '~/components/providers'
-import { body, cursive, heading } from '~/styles/fonts'
+import { Layout } from '#/components/layout'
+import { Providers } from '#/components/providers'
+import { body, cursive, heading } from '#/styles/fonts'
 
 export const metadata: Metadata = {
   title: 'Arsam Sarabi',

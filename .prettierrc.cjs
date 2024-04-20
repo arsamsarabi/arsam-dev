@@ -6,9 +6,9 @@ module.exports = {
   // A collection of Regular expressions in string format.
   importOrder: [
     '@mantine/core/styles.css',
-    '~/styles/globals.css',
+    '#/styles/globals.css',
     '<THIRD_PARTY_MODULES>',
-    '^[~/]',
+    '^[#/]',
     '^[./]',
   ],
   // A boolean value to enable or disable the new line separation

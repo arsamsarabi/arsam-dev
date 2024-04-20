@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import ucn from '~/styles/utility-classes.module.css'
+import ucn from '#/styles/utility-classes.module.css'
 import { ColorSchemeToggle } from '../color-scheme-toggle'
 import cn from './footer.module.css'
 
