@@ -20,7 +20,7 @@ export const ColorSchemeToggle = () => {
     <ActionIcon
       aria-label="Toggle color scheme"
       onClick={toggleColorScheme}
-      size="xs"
+      size="sm"
       variant="subtle"
     >
       <AppIcon
@@ -30,7 +30,7 @@ export const ColorSchemeToggle = () => {
       />
       <AppIcon
         className={cn['light-only']}
-        color="var(--mantine-color-dark-3)"
+        color="var(--mantine-color-black)"
         name="moon"
       />
     </ActionIcon>

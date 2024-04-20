@@ -1,5 +1,8 @@
 import {
   IconBook2,
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
   IconHome,
   IconMoonFilled,
   IconSend,
@@ -8,7 +11,16 @@ import {
 } from '@tabler/icons-react'
 import { ReactNode } from 'react'
 
-export type Icons = 'sun' | 'moon' | 'home' | 'user' | 'send' | 'book'
+export type Icons =
+  | 'sun'
+  | 'moon'
+  | 'home'
+  | 'user'
+  | 'send'
+  | 'book'
+  | 'github'
+  | 'instagram'
+  | 'linkedin'
 
 export type IconProps = {
   size?: string | number
@@ -23,4 +35,7 @@ export const ICONS: Record<Icons, (props: IconProps) => ReactNode> = {
   user: IconUserFilled,
   send: IconSend,
   book: IconBook2,
+  github: IconBrandGithub,
+  instagram: IconBrandInstagram,
+  linkedin: IconBrandLinkedin,
 }

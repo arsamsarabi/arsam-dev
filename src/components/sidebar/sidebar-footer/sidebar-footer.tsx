@@ -3,14 +3,14 @@ import clsx from 'clsx'
 import { ColorSchemeToggle } from '#/components/color-scheme-toggle'
 import { Socials } from '#/components/socials'
 import ucn from '#/styles/utility-classes.module.css'
-import cn from './footer.module.css'
+import cn from './sidebar-footer.module.css'
 
-export const Footer = () => {
+export const SidebarFooter = () => {
   return (
-    <footer className={clsx(cn.footer, ucn['container-padding'])}>
+    <div className={clsx(cn.wrapper, ucn['container-padding'])}>
       <Socials />
       <Space w="sm" />
       <ColorSchemeToggle />
-    </footer>
+    </div>
   )
 }
