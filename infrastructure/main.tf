@@ -7,11 +7,6 @@ terraform {
   }
 }
 
-provider "vercel" {
-  api_token = var.vercel_api_token
-  team      = var.vercel_team_id
-}
-
 locals {
   project_name                     = "arsam-dev"
   git_repository_type              = "github"
@@ -20,6 +15,14 @@ locals {
   git_repository_demo_branch       = "main"
   prod_url                         = "beta.arsam.dev"
   demo_url                         = "demo.arsam.dev"
+}
+
+# ---------------------------------------------------------------
+# Vercel
+# ---------------------------------------------------------------
+provider "vercel" {
+  api_token = var.vercel_api_token
+  team      = var.vercel_team_id
 }
 
 # --- Project: checkout
