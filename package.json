@@ -5,6 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "fmt": "terraform fmt",
     "format": "prettier '*/**/*.{js,ts,tsx}' --write",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --fix",
     "postbuild": "next-sitemap",
