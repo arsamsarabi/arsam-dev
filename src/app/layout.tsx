@@ -4,7 +4,7 @@ import { ColorSchemeScript } from '@mantine/core'
 import type { Metadata } from 'next'
 import { Layout } from '#/components/layout'
 import { body, cursive, heading } from '#/styles/fonts'
-import { Providers } from '../components/providers'
+import { AppProviders } from '../components/app-providers'
 
 export const metadata: Metadata = {
   title: 'Arsam Sarabi',
@@ -32,9 +32,9 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <Providers>
+        <AppProviders>
           <Layout>{children}</Layout>
-        </Providers>
+        </AppProviders>
       </body>
     </html>
   )
