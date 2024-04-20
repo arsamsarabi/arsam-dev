@@ -1,0 +1,12 @@
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--mantine-color-brand-4);
+  font-size: var(--mantine-font-size-xl);
+
+  @mixin light {
+    color: var(--mantine-color-black);
+  }
+}

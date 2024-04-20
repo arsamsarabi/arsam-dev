@@ -1,6 +1,9 @@
+import '@mantine/core/styles.css'
 import '~/styles/globals.css'
+import { ColorSchemeScript } from '@mantine/core'
 import type { Metadata } from 'next'
-import { Providers } from '~/components/Providers'
+import { Layout } from '~/components/layout'
+import { Providers } from '~/components/providers'
 import { body, cursive, heading } from '~/styles/fonts'
 
 export const metadata: Metadata = {
@@ -26,9 +29,12 @@ export default function RootLayout({
           type="image/png"
           sizes="32x32"
         />
+        <ColorSchemeScript />
       </head>
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Layout>{children}</Layout>
+        </Providers>
       </body>
     </html>
   )

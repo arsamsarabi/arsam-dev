@@ -13,6 +13,7 @@ export type Icons = 'sun' | 'moon' | 'home' | 'user' | 'send' | 'book'
 export type IconProps = {
   size?: string | number
   stroke?: string | number
+  color?: string
 }
 
 export const ICONS: Record<Icons, (props: IconProps) => ReactNode> = {

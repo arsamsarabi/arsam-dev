@@ -5,6 +5,7 @@ module.exports = {
   singleQuote: true,
   // A collection of Regular expressions in string format.
   importOrder: [
+    '@mantine/core/styles.css',
     '~/styles/globals.css',
     '<THIRD_PARTY_MODULES>',
     '^[~/]',
@@ -18,4 +19,4 @@ module.exports = {
   // in an import declarations.
   importOrderSortSpecifiers: true,
   plugins: ['@trivago/prettier-plugin-sort-imports'],
-};
+}

@@ -1,0 +1,23 @@
+.light-only {
+  @mixin dark {
+    display: none;
+  }
+
+  @mixin light {
+    display: block;
+  }
+}
+
+.dark-only {
+  @mixin light {
+    display: none;
+  }
+
+  @mixin dark {
+    display: block;
+  }
+}
+
+.container-padding {
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+}

@@ -13,10 +13,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@mantine/core": "^7.8.0",
+    "@mantine/hooks": "^7.8.0",
     "@tabler/icons-react": "^3.2.0",
+    "clsx": "^2.1.0",
     "framer-motion": "^11.0.28",
     "next": "14.2.1",
-    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -30,6 +32,9 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "next-sitemap": "^4.2.3",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.14.4",
+    "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.2.5",
     "typescript": "^5"
   }

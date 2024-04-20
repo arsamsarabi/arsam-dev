@@ -1,7 +1,9 @@
+import { Text } from '@mantine/core'
+
 export default function Home() {
   return (
-    <main>
-      <button>Click!</button>
-    </main>
+    <>
+      <Text>Home page</Text>
+    </>
   )
 }

@@ -1,17 +1,18 @@
 'use client'
 
-import { useLoaded } from '~/hooks/use-loaded'
-import { ICONS, IconProps, type Icons } from './icons'
+import { useIsLoaded } from '~/hooks/use-is-loaded'
+import { ICONS, IconProps, type Icons } from './all-icons'
 
 type Props = IconProps & {
   name: Icons
+  className?: string
 }
 
-export const Icon = ({ name, ...rest }: Props) => {
-  const loaded = useLoaded()
+export const Icon = ({ color, name, ...rest }: Props) => {
+  const isLoaded = useIsLoaded()
   const Icon = ICONS[name]
 
-  if (!loaded) return null
+  if (!isLoaded) return null
 
-  return <Icon stroke={1.4} {...rest} />
+  return <Icon color={color} stroke={1.4} {...rest} />
 }

@@ -1,8 +1,13 @@
 'use client'
 
-import { ThemeProvider } from 'next-themes'
+import { MantineProvider } from '@mantine/core'
 import type { PropsWithChildren } from 'react'
+import { theme } from '~/styles/theme'
 
 export const Providers = ({ children }: PropsWithChildren<unknown>) => {
-  return <ThemeProvider attribute="class">{children}</ThemeProvider>
+  return (
+    <MantineProvider defaultColorScheme="auto" theme={theme}>
+      {children}
+    </MantineProvider>
+  )
 }

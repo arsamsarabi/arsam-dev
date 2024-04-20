@@ -1,2 +1,2 @@
-export * from './Icon'
-export type { Icons } from './icons'
+export * from './icon'
+export type { Icons } from './all-icons'
