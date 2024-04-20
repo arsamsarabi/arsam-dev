@@ -5,8 +5,8 @@ import {
   useComputedColorScheme,
   useMantineColorScheme,
 } from '@mantine/core'
-import { Icon } from '#/components/icon'
 import cn from '#/styles/utility-classes.module.css'
+import { Icon } from '../icon'
 
 export const ColorSchemeToggle = () => {
   const { setColorScheme } = useMantineColorScheme()
