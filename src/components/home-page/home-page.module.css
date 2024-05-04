@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mantine-spacing-xs);
+
+  p {
+    text-align: justify;
+  }
+}
+
+.avatar {
+  &__root {
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.125);
+  }
+  &__image {
+    filter: saturate(50%);
+  }
+}

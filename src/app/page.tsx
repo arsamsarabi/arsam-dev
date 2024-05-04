@@ -1,9 +1,5 @@
-import { Text } from '@mantine/core'
+import { HomePage } from '#/components/home-page'
 
 export default function Home() {
-  return (
-    <>
-      <Text>Home page</Text>
-    </>
-  )
+  return <HomePage />
 }

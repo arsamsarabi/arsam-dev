@@ -4,19 +4,16 @@ import {
   mergeMantineTheme,
   rem,
 } from '@mantine/core'
-import { colors } from './colors'
+import { PRIMARY_INDEX, colors } from './colors'
 import { body, heading } from './fonts'
 import { other } from './other'
 
 const themeOverride = createTheme({
-  white: '#F7F7F7',
-  black: '#323643',
+  white: colors.light[PRIMARY_INDEX],
+  black: colors.dark[PRIMARY_INDEX],
   colors,
-  primaryColor: 'brand',
-  primaryShade: {
-    light: 6,
-    dark: 4,
-  },
+  primaryColor: 'primary',
+  primaryShade: PRIMARY_INDEX,
   fontFamily: body.style.fontFamily,
   headings: {
     fontFamily: heading.style.fontFamily,

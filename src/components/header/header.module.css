@@ -2,13 +2,4 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: var(--mantine-color-gray-1);
-  border-bottom: 1px solid var(--mantine-color-gray-3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  @mixin dark {
-    background: rgba(255, 255, 255, 0.025);
-    border: 0;
-  }
 }

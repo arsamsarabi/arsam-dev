@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mantine-spacing-xl);
+  border-bottom: 1px solid var(--mantine-color-gray-3);
+  width: 100%;
+}
+
+.link {
+}
