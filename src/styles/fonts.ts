@@ -1,4 +1,9 @@
-import { JetBrains_Mono, Julee, M_PLUS_Code_Latin } from 'next/font/google'
+import {
+  Great_Vibes,
+  JetBrains_Mono,
+  Julee,
+  M_PLUS_Code_Latin,
+} from 'next/font/google'
 
 export const body = JetBrains_Mono({
   subsets: ['latin-ext'],
@@ -12,7 +17,7 @@ export const heading = M_PLUS_Code_Latin({
   variable: '--font-heading',
 })
 
-export const cursive = Julee({
+export const cursive = Great_Vibes({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-cursive',

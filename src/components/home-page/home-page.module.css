@@ -12,7 +12,7 @@
 
 .avatar {
   &__root {
-    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.125);
+    box-shadow: var(--mantine-avatar-shadowDark);
   }
   &__image {
     filter: saturate(50%);

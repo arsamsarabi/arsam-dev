@@ -1,4 +1,5 @@
 import {
+  Anchor,
   DEFAULT_THEME,
   createTheme,
   mergeMantineTheme,
@@ -38,7 +39,26 @@ const themeOverride = createTheme({
     lg: '75em',
     xl: '88em',
   },
+  spacing: {
+    xs: rem(14),
+    sm: rem(16),
+    md: rem(24),
+    lg: rem(32),
+    xl: rem(40),
+    '2xl': rem(48),
+    '3xl': rem(56),
+    '4xl': rem(64),
+    '5xl': rem(72),
+    '6xl': rem(80),
+  },
   other,
+  components: {
+    Anchor: Anchor.extend({
+      defaultProps: {
+        color: 'var(--mantine-color-secondary-4)',
+      },
+    }),
+  },
 })
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)

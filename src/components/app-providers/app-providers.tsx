@@ -1,16 +1,11 @@
 'use client'
 
-import { MantineProvider } from '@mantine/core'
 import type { PropsWithChildren } from 'react'
-import { theme } from '#/styles/theme'
+import { ThemeProvider } from '#/styles/theme-provider'
 import { env } from '#/utils/env'
 
 export const AppProviders = ({ children }: PropsWithChildren<unknown>) => {
   console.log('client side env vars')
   console.log(env)
-  return (
-    <MantineProvider defaultColorScheme="auto" theme={theme}>
-      {children}
-    </MantineProvider>
-  )
+  return <ThemeProvider>{children}</ThemeProvider>
 }
