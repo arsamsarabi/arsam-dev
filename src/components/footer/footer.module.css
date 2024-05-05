@@ -2,4 +2,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: var(--mantine-footer-sm);
+  position: sticky;
+
+  @media (min-width: $mantine-breakpoint-sm) {
+    height: var(--mantine-footer-md);
+  }
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    height: var(--mantine-footer-lg);
+  }
 }

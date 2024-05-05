@@ -14,6 +14,8 @@ const toCSSVars = (prefix: string, props: Record<string, string | number>) =>
 const resolver: CSSVariablesResolver = () => ({
   variables: {
     ...toCSSVars('avatar', other.avatar),
+    ...toCSSVars('header', other.headerHeight),
+    ...toCSSVars('footer', other.footerHeight),
   },
   light: {},
   dark: {},

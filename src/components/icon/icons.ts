@@ -1,4 +1,5 @@
 import {
+  IconArrowBigDownFilled,
   IconBook2,
   IconBrandGithub,
   IconBrandInstagram,
@@ -21,6 +22,7 @@ export type Icons =
   | 'github'
   | 'instagram'
   | 'linkedin'
+  | 'arrow-big-down'
 
 export type IconProps = {
   size?: string | number
@@ -38,4 +40,5 @@ export const ICONS: Record<Icons, (props: IconProps) => ReactNode> = {
   github: IconBrandGithub,
   instagram: IconBrandInstagram,
   linkedin: IconBrandLinkedin,
+  'arrow-big-down': IconArrowBigDownFilled,
 }

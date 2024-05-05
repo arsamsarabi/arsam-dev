@@ -3,6 +3,16 @@
   justify-content: flex-start;
   align-items: center;
   gap: var(--mantine-spacing-xs);
+  height: var(--mantine-header-sm);
+  position: sticky;
+
+  @media (min-width: $mantine-breakpoint-sm) {
+    height: var(--mantine-header-md);
+  }
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    height: var(--mantine-header-lg);
+  }
 }
 
 .nav {

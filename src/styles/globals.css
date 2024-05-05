@@ -9,7 +9,6 @@ body {
   width: 100vw;
   height: 100svh;
   overflow: hidden;
-  font-size: 16px;
 }
 
 body {
@@ -63,16 +62,25 @@ body {
 ::-webkit-scrollbar-track {
   position: absolute;
   border: none;
-  background-color: green;
+  border-radius: 2px;
+  background-color: var(--mantine-color-brand-4);
+
+  @mixin dark {
+    background-color: var(--mantine-color-brand-2);
+  }
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: firebrick;
   border-radius: 2px;
+  background-color: var(--mantine-color-brand-6);
+
+  @mixin dark {
+    background-color: var(--mantine-color-brand-7);
+  }
 }

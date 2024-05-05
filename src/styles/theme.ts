@@ -32,11 +32,11 @@ const themeOverride = createTheme({
   },
   defaultRadius: 'sm',
   breakpoints: {
-    xs: '36em',
-    sm: '48em',
-    md: '62em',
-    lg: '75em',
-    xl: '88em',
+    xs: '30em', // 30 * 16 = 480px
+    sm: '48em', // 48 * 16 = 768px
+    md: '64em', // 64 * 16 = 1024px
+    lg: '74em', // 74 * 16 = 1184px
+    xl: '90em', // 90 * 16 = 1440px
   },
   spacing: {
     xs: rem(14),
