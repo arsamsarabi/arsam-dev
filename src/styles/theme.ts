@@ -1,19 +1,18 @@
 import {
-  Anchor,
   DEFAULT_THEME,
   createTheme,
   mergeMantineTheme,
   rem,
 } from '@mantine/core'
-import { PRIMARY_INDEX, colors } from './colors'
+import { COLOURS, COLOUR_BLACK, COLOUR_WHITE, PRIMARY_INDEX } from './colors'
 import { body, heading } from './fonts'
 import { other } from './other'
 
 const themeOverride = createTheme({
-  white: colors.light[PRIMARY_INDEX],
-  black: colors.dark[PRIMARY_INDEX],
-  colors,
-  primaryColor: 'primary',
+  white: COLOUR_WHITE,
+  black: COLOUR_BLACK,
+  colors: COLOURS,
+  primaryColor: 'brand',
   primaryShade: PRIMARY_INDEX,
   fontFamily: body.style.fontFamily,
   headings: {
@@ -23,13 +22,13 @@ const themeOverride = createTheme({
     xs: rem(14),
     sm: rem(16),
     md: rem(18),
-    lg: rem(20),
-    xl: rem(24),
-    '2xl': rem(32),
-    '3xl': rem(48),
-    '4xl': rem(64),
-    '5xl': rem(96),
-    '6xl': rem(128),
+    lg: rem(26),
+    xl: rem(34),
+    '2xl': rem(42),
+    '3xl': rem(50),
+    '4xl': rem(58),
+    '5xl': rem(66),
+    '6xl': rem(74),
   },
   defaultRadius: 'sm',
   breakpoints: {
@@ -52,13 +51,6 @@ const themeOverride = createTheme({
     '6xl': rem(80),
   },
   other,
-  components: {
-    Anchor: Anchor.extend({
-      defaultProps: {
-        color: 'var(--mantine-color-secondary-4)',
-      },
-    }),
-  },
 })
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride)

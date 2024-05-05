@@ -5,13 +5,13 @@ export const Socials = () => {
   return (
     <div className={cn.wrapper}>
       <SocialLink
-        href="https://github.com/arsamsarabi/arsam-dev"
         name="github"
+        href="https://github.com/arsamsarabi/arsam-dev"
       />
-      <SocialLink href="https://linkedin.com/in/arsam" name="linkedin" />
+      <SocialLink name="linkedin" href="https://linkedin.com/in/arsam" />
       <SocialLink
-        href="https://www.instagram.com/arsamsarabi/"
         name="instagram"
+        href="https://www.instagram.com/arsamsarabi/"
       />
     </div>
   )

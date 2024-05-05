@@ -19,5 +19,5 @@
 }
 
 .container-padding {
-  padding: var(--mantine-spacing-md);
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
 }

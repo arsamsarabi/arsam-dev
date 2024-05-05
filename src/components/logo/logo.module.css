@@ -1,10 +1,5 @@
-.link {
-  text-decoration: none;
+.logo {
   font-family: var(--font-cursive);
-  color: var(--mantine-color-primary-1);
-  font-size: var(--mantine-font-size-3xl);
-
-  @mixin light {
-    color: var(--mantine-color-black);
-  }
+  font-size: var(--mantine-font-size-2xl);
+  color: var(--mantine-color-brand-5);
 }

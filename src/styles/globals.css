@@ -15,29 +15,28 @@ body {
 body {
   animation-name: animateBg;
   animation-delay: 0s;
-  animation-duration: 7s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-fill-mode: both;
   background-image: linear-gradient(
     135deg,
-    var(--mantine-color-light-1),
-    var(--mantine-color-light-3),
-    var(--mantine-color-light-5),
-    var(--mantine-color-light-7)
+    var(--mantine-color-white),
+    var(--mantine-color-brand-0),
+    var(--mantine-color-brand-1)
   );
   background-size: 400% 400%;
   background-position: 0% 100%;
+  color: var(--mantine-color-brand-9);
 
   @mixin dark {
     background-image: linear-gradient(
-      45deg,
-      var(--mantine-color-dark-8),
-      var(--mantine-color-dark-7),
-      var(--mantine-color-dark-6),
-      var(--mantine-color-dark-5)
+      135deg,
+      var(--mantine-color-black),
+      var(--mantine-color-brand-9)
     );
+    color: var(--mantine-color-brand-1);
   }
 }
 
@@ -51,9 +50,14 @@ body {
 }
 
 ::selection {
-  background-color: blueviolet;
-  color: gold;
+  background-color: var(--mantine-color-accent-5);
+  color: var(--mantine-color-brand-2);
   transition: 0.2s ease;
+
+  @mixin dark {
+    background-color: var(--mantine-color-brand-5);
+    color: var(--mantine-color-accent-7);
+  }
 }
 
 ::-webkit-scrollbar-track {

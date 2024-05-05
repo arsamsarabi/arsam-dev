@@ -15,6 +15,5 @@
     box-shadow: var(--mantine-avatar-shadowDark);
   }
   &__image {
-    filter: saturate(50%);
   }
 }

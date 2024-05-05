@@ -1,18 +1,19 @@
 import { Center } from '@mantine/core'
+import clsx from 'clsx'
 import Link from 'next/link'
-import { AppIcon, type Icons } from '../app-icon'
+import { Icon, type Icons } from '#/components/icon'
 import cn from './socials.module.css'
 
-type Props = {
+export type SocialLinkProps = {
   href: string
   name: Icons
 }
 
-export const SocialLink = ({ href, name }: Props) => {
+export const SocialLink = ({ href, name }: SocialLinkProps) => {
   return (
     <Link href={href} target="_blank">
       <Center>
-        <AppIcon className={cn.socials__link} name={name} stroke={1.6} />
+        <Icon className={clsx(cn.link, cn[name])} name={name} stroke={1.6} />
       </Center>
     </Link>
   )

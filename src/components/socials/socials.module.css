@@ -5,10 +5,33 @@
   gap: var(--mantine-spacing-xs);
 }
 
-.socials__link {
-  color: var(--mantine-color-black);
+.link {
+  border-radius: var(--mantine-radius-sm);
+}
+
+.github {
+  background-color: var(--mantine-color-black);
+  color: var(--mantine-color-white);
 
   @mixin dark {
-    color: var(--mantine-color-white);
+    background-color: var(--mantine-color-white);
+    color: var(--mantine-color-black);
   }
+}
+
+.linkedin {
+  background-color: #0a66c2;
+  color: var(--mantine-color-white);
+}
+
+.instagram {
+  background-image: linear-gradient(
+    135deg,
+    #7638fa,
+    #d300c5,
+    #ff0069,
+    #ff7a00,
+    #ffd600
+  );
+  color: var(--mantine-color-white);
 }

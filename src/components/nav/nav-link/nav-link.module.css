@@ -1,0 +1,7 @@
+.anchor {
+  color: var(--mantine-color-brand-6);
+
+  @mixin dark {
+    color: var(--mantine-color-brand-2);
+  }
+}
