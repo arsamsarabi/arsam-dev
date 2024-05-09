@@ -5,18 +5,18 @@ import {
   rem,
 } from '@mantine/core'
 import { COLOURS, COLOUR_BLACK, COLOUR_WHITE, PRIMARY_INDEX } from './colors'
-import { body, heading } from './fonts'
+import { Montserrat, Sensation } from './fonts'
 import { other } from './other'
 
 const themeOverride = createTheme({
   white: COLOUR_WHITE,
   black: COLOUR_BLACK,
   colors: COLOURS,
-  primaryColor: 'brand',
+  primaryColor: 'primary',
   primaryShade: PRIMARY_INDEX,
-  fontFamily: body.style.fontFamily,
+  fontFamily: Montserrat.style.fontFamily,
   headings: {
-    fontFamily: heading.style.fontFamily,
+    fontFamily: Sensation.style.fontFamily,
   },
   fontSizes: {
     xs: rem(14),

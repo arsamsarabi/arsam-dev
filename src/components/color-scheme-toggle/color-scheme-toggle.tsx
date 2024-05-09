@@ -30,7 +30,7 @@ export const ColorSchemeToggle = () => {
       />
       <Icon
         className={cn['light-only']}
-        color="var(--mantine-color-gray-7)"
+        color="var(--mantine-color-primary-8)"
         name="moon"
       />
     </ActionIcon>

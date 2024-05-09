@@ -9,7 +9,6 @@ export const Footer = () => {
   return (
     <footer className={clsx(cn.footer, ucn['container-padding'])}>
       <Socials />
-      <Space w="sm" />
       <ColorSchemeToggle />
     </footer>
   )

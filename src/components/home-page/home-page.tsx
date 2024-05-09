@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-import ucn from '#/styles/utility-classes.module.css'
 import {
   About,
   Contact,
@@ -13,7 +11,7 @@ import cn from './home-page.module.css'
 
 export const HomePage = () => {
   return (
-    <div className={clsx(cn.wrapper, ucn['container-padding'])}>
+    <div className={cn.wrapper}>
       <Landing />
       <About />
       <Experiences />

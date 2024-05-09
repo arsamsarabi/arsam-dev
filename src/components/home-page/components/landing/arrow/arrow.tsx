@@ -9,26 +9,16 @@ export const Arrow = () => {
     <motion.div
       animate={{
         transform: [
-          ' translateX(-50%) translateY(-50%)',
-          'translateX(-50%) translateY(10%)',
+          'translateX(-50%) translateY(0)',
+          'translateX(-50%) translateY(-50%)',
         ],
-        opacity: [0.25, 0.5],
       }}
       className={cn.arrow}
       transition={{
-        transform: {
-          duration: 1.25,
-          ease: 'linear',
-          repeat: Infinity,
-          repeatType: 'loop',
-          repeatDelay: 0.125,
-        },
-        opacity: {
-          duration: 1.25,
-          ease: 'linear',
-          repeat: Infinity,
-          repeatType: 'reverse',
-        },
+        type: 'spring',
+        easing: 'linear',
+        repeat: Infinity,
+        repeatType: 'reverse',
       }}
     >
       <Icon name="arrow-big-down" className={cn.arrow__icon} />

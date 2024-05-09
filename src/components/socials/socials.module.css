@@ -7,31 +7,47 @@
 
 .link {
   border-radius: var(--mantine-radius-sm);
+  transition: all 0.3s ease-in-out;
+
+  color: var(--colour-anchor);
+
+  @mixin dark {
+    color: var(--colour-anchor-dark);
+  }
 }
 
 .github {
-  background-color: var(--mantine-color-black);
-  color: var(--mantine-color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--mantine-color-black);
+    color: var(--mantine-color-white);
 
-  @mixin dark {
-    background-color: var(--mantine-color-white);
-    color: var(--mantine-color-black);
+    @mixin dark {
+      background-color: var(--mantine-color-white);
+      color: var(--mantine-color-black);
+    }
   }
 }
 
 .linkedin {
-  background-color: #0a66c2;
-  color: var(--mantine-color-white);
+  &:hover,
+  &:focus {
+    background-color: #0a66c2;
+    color: var(--mantine-color-white);
+  }
 }
 
 .instagram {
-  background-image: linear-gradient(
-    135deg,
-    #7638fa,
-    #d300c5,
-    #ff0069,
-    #ff7a00,
-    #ffd600
-  );
-  color: var(--mantine-color-white);
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      135deg,
+      #7638fa,
+      #d300c5,
+      #ff0069,
+      #ff7a00,
+      #ffd600
+    );
+    color: var(--mantine-color-white);
+  }
 }

@@ -4,6 +4,7 @@
   align-items: center;
   height: var(--mantine-footer-sm);
   position: sticky;
+  gap: var(--mantine-spacing-xs);
 
   @media (min-width: $mantine-breakpoint-sm) {
     height: var(--mantine-footer-md);

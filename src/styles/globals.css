@@ -1,3 +1,18 @@
+:root {
+  --font-family-heading: var(--font-sensation);
+  --font-family-body: var(--font-montserrat);
+  --font-family-cursive: var(--font-daniel);
+
+  --colour-text: var(--mantine-color-primary-9);
+  --colour-text-dark: var(--mantine-color-primary-0);
+
+  --colour-title: var(--mantine-color-primary-6);
+  --colour-title-dark: var(--mantine-color-secondary-1);
+
+  --colour-anchor: var(--mantine-color-secondary-5);
+  --colour-anchor-dark: var(--mantine-color-tertiary-2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +24,7 @@ body {
   width: 100vw;
   height: 100svh;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,20 +38,22 @@ body {
   background-image: linear-gradient(
     135deg,
     var(--mantine-color-white),
-    var(--mantine-color-brand-0),
-    var(--mantine-color-brand-1)
+    var(--mantine-color-primary-0),
+    var(--mantine-color-primary-1),
+    var(--mantine-color-primary-2)
   );
   background-size: 400% 400%;
   background-position: 0% 100%;
-  color: var(--mantine-color-brand-9);
+  color: var(--colour-text);
 
   @mixin dark {
     background-image: linear-gradient(
       135deg,
       var(--mantine-color-black),
-      var(--mantine-color-brand-9)
+      var(--mantine-color-primary-11),
+      var(--mantine-color-primary-10)
     );
-    color: var(--mantine-color-brand-1);
+    color: var(--colour-text-dark);
   }
 }
 
@@ -49,13 +67,13 @@ body {
 }
 
 ::selection {
-  background-color: var(--mantine-color-accent-5);
-  color: var(--mantine-color-brand-2);
+  background-color: var(--mantine-color-secondary-7);
+  color: var(--mantine-color-primary-0);
   transition: 0.2s ease;
 
   @mixin dark {
-    background-color: var(--mantine-color-brand-5);
-    color: var(--mantine-color-accent-7);
+    background-color: var(--mantine-color-tertiary-5);
+    color: var(--mantine-color-secondary-8);
   }
 }
 
@@ -63,10 +81,10 @@ body {
   position: absolute;
   border: none;
   border-radius: 2px;
-  background-color: var(--mantine-color-brand-4);
+  background-color: var(--mantine-color-primary-4);
 
   @mixin dark {
-    background-color: var(--mantine-color-brand-2);
+    background-color: var(--mantine-color-primary-2);
   }
 }
 
@@ -78,9 +96,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background-color: var(--mantine-color-brand-6);
+  background-color: var(--mantine-color-primary-6);
 
   @mixin dark {
-    background-color: var(--mantine-color-brand-7);
+    background-color: var(--mantine-color-primary-7);
   }
 }

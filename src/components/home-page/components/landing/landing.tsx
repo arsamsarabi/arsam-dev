@@ -1,4 +1,4 @@
-import { Avatar, Space, Text } from '@mantine/core'
+import { Image, Space, Text, Title } from '@mantine/core'
 import { Section } from '../section'
 import { Arrow } from './arrow'
 import cn from './landing.module.css'
@@ -6,17 +6,13 @@ import cn from './landing.module.css'
 export const Landing = () => {
   return (
     <Section className={cn.wrapper}>
-      <Avatar
-        alt="arsam"
-        autoContrast
-        classNames={{ root: cn.avatar__root, image: cn.avatar__image }}
-        size={120}
-        src="/images/arsam.JPG"
-      />
+      <picture className={cn.image}>
+        <Image alt="arsam" src="/images/arsam.JPG" radius="md" />
+      </picture>
 
       <Space h="md" />
 
-      <Text>Hi I&apos;m Arsam!</Text>
+      <Title className={cn.title}>Hi, I&apos;m Arsam!</Title>
 
       <Space h="sm" />
 

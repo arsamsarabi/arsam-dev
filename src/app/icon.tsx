@@ -1,5 +1,4 @@
 import { ImageResponse } from 'next/og'
-import { cursive } from '#/styles/fonts'
 
 // Route segment config
 export const runtime = 'edge'
@@ -18,10 +17,10 @@ export default function Icon() {
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 24,
-          fontFamily: `${cursive.style.fontFamily}`,
-          background: '#d3e7f7',
-          color: '#071b2b',
+          fontSize: 32,
+          fontFamily: `var(--font-family-heading)`,
+          background: '#D7CBE8',
+          color: '#20152F',
           width: '100%',
           height: '100%',
           display: 'flex',

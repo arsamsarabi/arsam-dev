@@ -3,5 +3,5 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: var(--mantine-spacing-xs);
+  gap: var(--mantine-spacing-md);
 }

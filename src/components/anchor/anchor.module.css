@@ -1,7 +1,5 @@
 .anchor {
   color: var(--colour-anchor);
-  font-size: var(--mantine-font-size-md);
-  font-family: var(--font-heading);
 
   @mixin dark {
     color: var(--colour-anchor-dark);
