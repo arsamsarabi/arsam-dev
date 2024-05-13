@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mantine-spacing-xs);
+
+  p {
+    text-align: justify;
+  }
+}
+
+.avatar {
+  &__root {
+    box-shadow: var(--mantine-avatar-shadowDark);
+  }
+  &__image {
+  }
+}

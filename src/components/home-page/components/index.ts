@@ -1,7 +1,0 @@
-export * from './about'
-export * from './contact'
-export * from './experiences'
-export * from './hobbies'
-export * from './landing'
-export * from './projects'
-export * from './tools'

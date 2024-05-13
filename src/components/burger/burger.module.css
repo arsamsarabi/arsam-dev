@@ -1,0 +1,9 @@
+.wrapper {
+  --burger-pos: 14px;
+
+  margin-left: auto;
+  position: absolute;
+  top: var(--burger-pos);
+  right: var(--burger-pos);
+  z-index: 10;
+}

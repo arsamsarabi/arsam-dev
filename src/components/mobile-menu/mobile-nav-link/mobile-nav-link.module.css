@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--mantine-spacing-sm);
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  color: var(--mantine-color-grey-9);
+  font-size: var(--mantine-font-size-md);
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+}
+
+.icon {
+}
+
+.text {
+}

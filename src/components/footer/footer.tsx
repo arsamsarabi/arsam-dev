@@ -1,4 +1,3 @@
-import { Space } from '@mantine/core'
 import clsx from 'clsx'
 import { ColorSchemeToggle } from '#/components/color-scheme-toggle'
 import { Socials } from '#/components/socials'
