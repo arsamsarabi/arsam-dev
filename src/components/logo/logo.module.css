@@ -1,7 +1,8 @@
 .anchor {
   --light-bg: linear-gradient(
     to right,
-    var(--mantine-color-primary-5),
+    var(--mantine-color-primary-6),
+    var(--mantine-color-secondary-5),
     var(--mantine-color-tertiary-5)
   );
 

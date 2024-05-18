@@ -3,8 +3,8 @@
   --font-family-body: var(--font-montserrat);
   --font-family-cursive: var(--font-daniel);
 
-  --colour-text: var(--mantine-color-primary-9);
-  --colour-text-dark: var(--mantine-color-primary-0);
+  --colour-text: var(--mantine-color-black);
+  --colour-text-dark: var(--mantine-color-white);
 
   --colour-title: var(--mantine-color-primary-6);
   --colour-title-dark: var(--mantine-color-secondary-1);
@@ -32,7 +32,7 @@ body {
   color: var(--colour-text);
 
   @mixin dark {
-    background-color: var(--mantine-color-secondary-9);
+    background-color: var(--mantine-color-secondary-8);
     color: var(--colour-text-dark);
   }
 }

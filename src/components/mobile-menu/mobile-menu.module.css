@@ -15,10 +15,5 @@
 }
 
 .content {
-  /* background-color: alpha(var(--mantine-color-primary-0), 0.75); */
   background-color: transparent;
-
-  /* @mixin dark {
-    background-color: alpha(var(--mantine-color-primary-8), 0.75);
-  } */
 }

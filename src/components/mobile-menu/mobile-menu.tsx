@@ -1,6 +1,8 @@
 'use client'
 
+import { Space } from '@mantine/core'
 import clsx from 'clsx'
+import { ColorSchemeToggle } from '#/components/color-scheme-toggle'
 import { Logo } from '#/components/logo'
 import { useBurgerStore } from '#/stores/burger.store'
 import ucn from '#/styles/utility-classes.module.css'
@@ -17,7 +19,10 @@ export const MobileMenu = () => {
       })}
     >
       <Logo />
+      <Space h="md" />
       <LinkList />
+      <Space h="md" />
+      <ColorSchemeToggle />
     </div>
   )
 }
