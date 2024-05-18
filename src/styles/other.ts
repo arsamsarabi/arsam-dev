@@ -17,6 +17,10 @@ export const other = {
     md: '48px',
     lg: '48px',
   },
+
+  z: {
+    borger: 100,
+  },
 }
 
 export type ThemeOther = keyof typeof other

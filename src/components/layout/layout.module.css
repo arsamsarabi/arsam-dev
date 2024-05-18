@@ -1,9 +1,36 @@
 .container {
+  --bg-light: linear-gradient(
+    290deg,
+    var(--mantine-color-white),
+    var(--mantine-color-primary-0)
+  );
+
+  --bg-dark: linear-gradient(
+    290deg,
+    var(--mantine-color-black),
+    var(--mantine-color-primary-8)
+  );
+
   width: 100vw;
   height: 100svh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-image: var(--bg-light);
+  transition: all 0.3s linear;
+
+  @mixin dark {
+    background-image: var(--bg-dark);
+  }
+
+  &__opened {
+    position: relative;
+    scale: 0.75;
+    opacity: 0.75;
+    filter: blur(8px);
+    transform: translateX(75%);
+  }
 }
 
 .main {
@@ -12,6 +39,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   flex: 1;
+  transition: all 0.3s linear;
 
   &::-webkit-scrollbar {
     width: 0px;

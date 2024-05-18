@@ -1,5 +1,6 @@
 import {
   IconArrowBigDownFilled,
+  IconArticle,
   IconBook2,
   IconBrandGithub,
   IconBrandInstagram,
@@ -8,11 +9,12 @@ import {
   IconMoonFilled,
   IconSend,
   IconSunFilled,
-  IconUserFilled,
+  IconUser,
 } from '@tabler/icons-react'
 import { ReactNode } from 'react'
 
 export type Icons =
+  | 'blog'
   | 'sun'
   | 'moon'
   | 'home'
@@ -30,11 +32,13 @@ export type IconProps = {
   color?: string
 }
 
+// eslint-disable-next-line no-unused-vars
 export const ICONS: Record<Icons, (props: IconProps) => ReactNode> = {
+  blog: IconArticle,
   sun: IconSunFilled,
   moon: IconMoonFilled,
   home: IconHome,
-  user: IconUserFilled,
+  user: IconUser,
   send: IconSend,
   book: IconBook2,
   github: IconBrandGithub,

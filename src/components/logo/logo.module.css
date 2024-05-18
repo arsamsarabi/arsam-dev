@@ -1,21 +1,34 @@
 .anchor {
-  background-clip: text;
-  background-image: linear-gradient(
+  --light-bg: linear-gradient(
     to right,
-    var(--mantine-color-primary-5),
+    var(--mantine-color-primary-6),
+    var(--mantine-color-secondary-5),
     var(--mantine-color-tertiary-5)
   );
+
+  --dark-bg: linear-gradient(
+    to right,
+    var(--mantine-color-secondary-1),
+    var(--mantine-color-tertiary-3),
+    var(--mantine-color-primary-4)
+  );
+
+  background-clip: text;
+  background-image: var(--light-bg);
   font-family: var(--font-family-cursive);
   font-size: var(--mantine-font-size-lg);
   font-weight: 500;
   color: transparent;
 
+  &__invert {
+    background-image: var(--dark-bg);
+  }
+
   @mixin dark {
-    background-image: linear-gradient(
-      to right,
-      var(--mantine-color-secondary-1),
-      var(--mantine-color-tertiary-3),
-      var(--mantine-color-primary-4)
-    );
+    background-image: var(--dark-bg);
+
+    &__invert {
+      background-image: var(--light-bg);
+    }
   }
 }

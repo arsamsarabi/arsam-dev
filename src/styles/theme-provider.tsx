@@ -16,12 +16,13 @@ const resolver: CSSVariablesResolver = () => ({
     ...toCSSVars('avatar', other.avatar),
     ...toCSSVars('header', other.headerHeight),
     ...toCSSVars('footer', other.footerHeight),
+    ...toCSSVars('z', other.z),
   },
   light: {},
   dark: {},
 })
 
-export const ThemeProvider = ({ children }: PropsWithChildren) => {
+export const ThemeProvider = ({ children }: PropsWithChildren<{}>) => {
   return (
     <MantineProvider
       cssVariablesResolver={resolver}

@@ -1,5 +1,5 @@
-import { BlogPage } from '#/components/blog-page'
+import { BlogScreen } from '#/components/screen-blog'
 
 export default function Blog() {
-  return <BlogPage />
+  return <BlogScreen />
 }
