@@ -12,6 +12,8 @@ import cn from './home.module.css'
 export const HomeScreen = () => {
   return (
     <div className={clsx(cn.wrapper, ucn['container-padding'])}>
+      <Space h="sm" />
+
       <motion.picture className={cn.image} {...fadeInProps}>
         <Image alt="arsam" src="/images/arsam.JPG" radius="md" />
       </motion.picture>
@@ -24,7 +26,7 @@ export const HomeScreen = () => {
         scratch, and bring ideas to life!
       </MotionText>
 
-      <Space h="md" />
+      <Space h="3xl" />
 
       <BlogPostsPreview />
     </div>

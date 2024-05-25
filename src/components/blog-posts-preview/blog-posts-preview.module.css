@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: var(--mantine-font-size-lg);
+}
+
+.posts_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--mantine-spacing-md);
+}
+
+.post-preview {
+  &__wrapper {
+    border: 3px dashed rebeccapurple;
+  }
+}
