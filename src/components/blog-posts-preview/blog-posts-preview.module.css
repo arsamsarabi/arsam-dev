@@ -6,7 +6,8 @@
 }
 
 .title {
-  font-size: var(--mantine-font-size-lg);
+  font-size: var(--mantine-font-size-xl);
+  margin-bottom: var(--mantine-spacing-md);
 }
 
 .posts_wrapper {
@@ -19,6 +20,7 @@
 
 .post-preview {
   &__wrapper {
-    border: 3px dashed rebeccapurple;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: var(--mantine-spacing-md);
   }
 }

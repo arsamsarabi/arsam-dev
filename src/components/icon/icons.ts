@@ -11,7 +11,7 @@ import {
   IconSunFilled,
   IconUser,
 } from '@tabler/icons-react'
-import { ReactNode } from 'react'
+import { ReactElement } from 'react'
 
 export type Icons =
   | 'blog'
@@ -33,7 +33,7 @@ export type IconProps = {
 }
 
 // eslint-disable-next-line no-unused-vars
-export const ICONS: Record<Icons, (props: IconProps) => ReactNode> = {
+export const ICONS: Record<Icons, (props: IconProps) => ReactElement | null> = {
   blog: IconArticle,
   sun: IconSunFilled,
   moon: IconMoonFilled,
