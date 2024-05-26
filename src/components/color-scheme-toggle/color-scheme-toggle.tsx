@@ -6,14 +6,17 @@ import {
   useMantineColorScheme,
 } from '@mantine/core'
 import { Icon } from '#/components/icon'
+import { useBurgerStore } from '#/stores/burger.store'
 import cn from '#/styles/utility-classes.module.css'
 
 export const ColorSchemeToggle = () => {
   const { setColorScheme } = useMantineColorScheme()
   const computedColorScheme = useComputedColorScheme()
+  const toggle = useBurgerStore((state) => state.toggle)
 
   const toggleColorScheme = () => {
     setColorScheme(computedColorScheme === 'dark' ? 'light' : 'dark')
+    toggle()
   }
 
   return (
