@@ -31,7 +31,7 @@ export const PostPreview = ({
     </Group>
 
     <Group justify="flex-start" mb="sm" dir="row">
-      <Image src={imageUrl} style={{ width: '100%', height: '100%' }} />
+      <Image alt="" src={imageUrl} style={{ width: '100%', height: '100%' }} />
       <Text lineClamp={5}>{excerpt}</Text>
     </Group>
 
